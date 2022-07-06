@@ -1,0 +1,236 @@
+body, html {
+    height: 100%;
+    margin: 0px;
+}
+
+#name {
+    color:hsl(280, 87%, 85%);
+    font-size: 60px;
+}
+
+header {
+    text-align: center;
+    height: 20vh;
+}
+
+#main-body a{
+    text-decoration: none;
+    color: hsl(280, 87%, 85%)
+}
+
+#main-body a:hover {
+    color: hsl(265, 97%, 49%);
+}
+
+.link:hover {
+    color: hsl(265, 97%, 49%);
+}
+
+#profile-image {
+    border-radius: 50%;
+    border: 5px solid hsl(280, 87%, 85%);
+}
+
+
+.blur {
+    position: relative;
+    text-align: center;
+    color: hsl(280, 87%, 85%);
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.blur img {
+    transition: 1s ease;
+}
+
+.blur img:hover {
+    transition: 1s ease;
+    filter: brightness(50%);
+}
+
+.blur div {
+    position: absolute;
+    color: hsl(280, 87%, 85%);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 1s linear;
+    transition: visibility 0s, opacity 1s linear;
+    transition: 1s ease;
+}
+
+.blur:hover {
+    cursor: pointer;
+}
+
+.blur:hover div {
+    visibility: visible;
+    opacity: 1;
+}
+
+#left-float {
+    float: left;
+    margin: 0px 30px 30px 30px;
+}
+
+#right-float {
+    float: right;
+    margin: 90px 60px 30px 30px;
+    text-align: center;
+    padding-right: 10%;
+}
+
+#main-body {
+    background-color: hsl(28, 100%, 62%);
+    color:hsl(0, 100%, 0%);
+    font-family: "Mingzat", "Trebuchet MS", "Arial";
+    font-size: 30px;
+}
+
+body p {
+    margin: 0px;
+}
+
+main {
+    overflow: auto;
+}
+
+.about-me-par {
+    font-size: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#footer {
+    bottom: 0px;
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+    height: 5vh;
+    margin-top: 30px;
+}
+
+footer hr {
+    color: hsl(280, 87%, 85%);
+    margin-top: 0px;
+    height: 2px;
+    background-color: hsl(280, 87%, 85%);
+    border: 0px;
+}
+
+.footer-art {
+    bottom: 0px;
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+    height: 5vh;
+    margin-top: 30px;
+}
+
+.footer-art hr {
+    color:hsl(28, 100%, 62%);
+    margin-top: 0px;
+    height: 2px;
+    background-color: hsl(28, 100%, 62%);
+    border: 0px;
+}
+
+input, textarea {
+    background-color: hsl(280, 87%, 85%);
+}
+
+#contact-center {
+    text-align: center;
+}
+
+.art-hobbies-center, a{
+    text-align: center;
+    text-decoration: none;
+    color: hsl(28, 100%, 62%);
+}
+
+.art-hobbies-name {
+    color: hsl(28, 100%, 62%);
+    font-size: 30px;
+}
+
+#art-body {
+    background-color: hsl(280, 87%, 85%);
+    color:hsl(0, 100%, 0%);
+    font-family: "Mingzat", "Trebuchet MS", "Arial";
+    font-size: 30px;
+}
+
+.item1 { grid-area: pic1; } 
+.item2 { grid-area: pic2; }
+.item3 { grid-area: pic3; }
+.item4 { grid-area: pic4; }
+.item5 { grid-area: pic5; } 
+.item6 { grid-area: pic6; }
+.item7 { grid-area: pic7; }
+.item8 { grid-area: pic8; }
+.item9 { grid-area: pic9; } 
+.item10 { grid-area: pic10; }
+.item11 { grid-area: pic11; }
+.item12 { grid-area: pic12; }
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'pic1 pic2 pic3'
+        'pic4 pic5 pic6'
+        'pic7 pic8 pic9'
+        'pic10 pic11 pic12';
+    gap: 5px;
+    background-color: hsl(280, 87%, 85%)
+    padding: 5px;
+}
+
+.grid-container > div {
+    background-color: hsl(280, 87%, 85%);
+    text-align: center;
+    padding: 20px 0;
+}
+
+.list { grid-area: list; }
+.pic1 { grid-area: pic1; }
+.pic2 { grid-area: pic2; }
+.pic3 { grid-area: pic3; }
+
+.grid-hobbies {
+    display: grid;
+    grid-template-areas: 
+        'list pic2 pic1'
+        'list pic2 pic1'
+        'list pic2 pic3';
+    gap: 10px;
+    background-color: hsl(280, 87%, 85%);
+    padding: 10px;
+    
+}
+
+.grid-hobbies > div {
+    background-color: hsl(280, 87%, 85%);
+    text-align: left;
+    padding: 20px 0;
+}
+
+ul {
+    padding: 20px;
+    list-style-type: none;
+}
+
+ul li {
+    background: hsl(280, 80%, 90%);
+    margin: 20px;
+}
+
+figcaption {
+    font-size: 15px;
+    text-align: center;
+}
